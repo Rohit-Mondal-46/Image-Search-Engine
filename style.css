@@ -1,0 +1,108 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.main{
+    width: 100%;
+    min-height: 100vh;
+    background-color: #8ac6af;
+    padding-top: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+/* #5C8374 */
+.main h2{
+    text-align: center;
+    font-size: 5rem;
+    color: black;
+    font-weight: 600;
+}
+
+#search-fld{
+    width: 28%;
+    height: 50px;
+    border: 1px solid black;
+    margin-top: 1rem;
+    position: relative;
+    border-radius: 5px;
+
+}
+#search-fld p{
+    font-size: 1.3rem;
+    text-align: center;
+    margin-top: 3px;
+
+}
+#search-fld p a{
+    text-decoration: none;
+    color: rgb(212, 105, 66);
+    font-size: 1.4rem;
+}
+#search-fld h3{
+    color: red;
+    margin-top: 35%;
+}
+#search-fld input{
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    color: black;
+    border: none;
+    outline: none;
+    padding-left: 5px;
+    font-size: 1.1rem;
+}
+#search-fld button{
+    width: 15%;
+    height: 100%;
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    background-color: rgb(255, 116, 66);
+    border: none;
+    outline: none;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    font-size: 1rem;
+    font-weight: 550;
+    cursor: pointer;
+
+}
+
+::placeholder{
+    color: white;
+    font-size: 1.1rem;
+}
+#show-more{
+    height: 2.5rem;
+    width: 7rem;
+    background-color: rgb(255, 116, 66);
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: 550;
+    cursor: pointer;
+    margin-top: 0;
+    margin-bottom: 1rem;
+    visibility: hidden;
+}
+
+#result-img{
+    width: 90%;
+    margin: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 30px;
+}
+
+#result-img img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 4px;
+}
